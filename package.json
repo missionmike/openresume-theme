@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build-lib": "tsup src/exports.ts --format esm,cjs --dts --tsconfig tsconfig.build.json",
+    "build-lib": "tsup src/exports.ts --format esm,cjs --dts --tsconfig tsconfig.build.json --external react",
     "start": "next start",
     "check": "npm run types:check && npm run lint && npm run prettier && npm run test",
     "lint": "next lint",
@@ -89,5 +89,9 @@
     "tsup": "^8.4.0",
     "tsx": "^4.19.2",
     "typescript": "^5"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

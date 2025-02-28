@@ -1,3 +1,4 @@
+import React from "react";
 import { Typography } from "@mui/material";
 
 export const ResumeTitle = ({ children }: { children: React.ReactNode }) => (

@@ -5,6 +5,7 @@ import { Company, Education as EducationType, SkillForUser, User } from "@/types
 import { Box } from "@mui/material";
 import { Education } from "./components/pdf/Education";
 import { Header } from "./components/pdf/Header";
+import { MUIThemeProvider } from "./MUIThemeProvider";
 import React from "react";
 import { Skills } from "./components/pdf/Skills";
 import { WorkExperience } from "./components/pdf/WorkExperience";
@@ -35,19 +36,21 @@ export const ThemeDefaultPDF = ({
   const options = { ...defaultThemeOptions, ...themeOptions };
 
   return (
-    <Box
-      sx={{
-        padding: 0,
-        lineHeight: 1.5,
-        fontFamily: "Arial",
-        color: "#000",
-        letterSpacing: 0,
-      }}
-    >
-      <Header user={user} />
-      <Skills skillsForUser={skillsForUser} />
-      <WorkExperience companies={companies} showSkills={options.showSkillsInWorkExperience} />
-      <Education education={education} />
-    </Box>
+    <MUIThemeProvider>
+      <Box
+        sx={{
+          padding: 0,
+          lineHeight: 1.5,
+          fontFamily: "Arial",
+          color: "#000",
+          letterSpacing: 0,
+        }}
+      >
+        <Header user={user} />
+        <Skills skillsForUser={skillsForUser} />
+        <WorkExperience companies={companies} showSkills={options.showSkillsInWorkExperience} />
+        <Education education={education} />
+      </Box>
+    </MUIThemeProvider>
   );
 };
