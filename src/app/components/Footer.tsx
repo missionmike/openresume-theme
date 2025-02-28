@@ -1,6 +1,6 @@
 "use client";
 
-import { BottomNavigation, Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import { MuiLink } from "@/components/MuiLink";
 import React from "react";
@@ -14,7 +14,7 @@ export const Footer = () => {
   const isResumePage = useIsResumePage();
 
   return (
-    <BottomNavigation
+    <Box
       component="footer"
       sx={(theme) => ({
         backgroundColor: theme.palette.background.paper,
@@ -47,6 +47,6 @@ export const Footer = () => {
           </Typography>
         </Box>
       </Box>
-    </BottomNavigation>
+    </Box>
   );
 };
