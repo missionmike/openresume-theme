@@ -3,7 +3,7 @@ export type ThemeName = "default";
 export interface Skill {
   id: string;
   name: string;
-  icon: string;
+  icon: string | null | undefined;
 }
 
 export interface SkillForProject {
@@ -15,7 +15,7 @@ export interface SkillForProject {
 export interface Project {
   id: string;
   name: string;
-  description: string;
+  description: string | null;
   skillsForProject: SkillForProject[];
 }
 
@@ -45,12 +45,12 @@ export interface Education {
 
 export interface User {
   id: string;
-  name: string;
-  email: string;
-  displayEmail: string;
-  location: string;
-  title: string;
-  siteTitle: string;
+  name: string | null;
+  email: string | null;
+  displayEmail: string | null;
+  location: string | null;
+  title: string | null;
+  siteTitle: string | null;
   siteDescription: string | null;
   siteImage: string | null;
 }
@@ -68,9 +68,9 @@ export interface SkillForUser {
   id: string;
   userId: string;
   skill: Skill;
-  icon?: string | null;
-  description?: string;
-  yearStarted?: number;
+  icon: string | null | undefined;
+  description?: string | null;
+  yearStarted?: number | null;
   totalYears?: number | null;
 }
 

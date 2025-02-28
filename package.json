@@ -2,10 +2,23 @@
   "name": "openresume-theme",
   "version": "1.0.0",
   "description": "A theme package for OpenResume",
-  "main": "index.js",
+  "main": "dist/exports.js",
+  "module": "dist/exports.mjs",
+  "types": "dist/exports.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/exports.d.ts",
+      "import": "./dist/exports.mjs",
+      "require": "./dist/exports.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-lib": "tsup src/exports.ts --format esm,cjs --dts --tsconfig tsconfig.build.json",
     "start": "next start",
     "check": "npm run types:check && npm run lint && npm run prettier && npm run test",
     "lint": "next lint",
@@ -74,6 +87,7 @@
     "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.2",
     "typescript": "^5"
   }

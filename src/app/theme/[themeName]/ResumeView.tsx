@@ -1,8 +1,8 @@
 "use client";
 
-import { ThemeDefault } from "./theme";
+import { ThemeDefault } from "@/theme";
 import { ThemeName } from "@/types";
-import { themeDefaultSampleData } from "./theme/Default/sampleData";
+import { themeDefaultSampleData } from "@/theme/Default/sampleData";
 
 export const ResumeView = ({ themeName }: { themeName: ThemeName }) => {
   switch (themeName) {

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "outDir": "dist",
+    "declaration": true
+  },
+  "include": ["src/exports.ts"]
+}
