@@ -7,7 +7,6 @@
   "types": "dist/exports.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/exports.d.ts",
       "import": "./dist/exports.mjs",
       "require": "./dist/exports.js"
     }
