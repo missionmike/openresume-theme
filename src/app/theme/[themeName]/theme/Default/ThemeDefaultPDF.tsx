@@ -3,17 +3,17 @@
 import { Company, Education as EducationType, SkillForUser, User } from "@/types";
 
 import { Box } from "@mui/material";
-import { Education } from "./sections/Education";
-import { Header } from "./sections/Header";
+import { Education } from "./components/pdf/Education";
+import { Header } from "./components/pdf/Header";
 import React from "react";
-import { Skills } from "./sections/Skills";
-import { WorkExperience } from "./sections/WorkExperience";
+import { Skills } from "./components/pdf/Skills";
+import { WorkExperience } from "./components/pdf/WorkExperience";
 
-interface PDFViewThemeDefaultOptions {
+interface ThemeDefaultPDFOptions {
   showSkillsInWorkExperience: boolean;
 }
 
-const defaultThemeOptions: PDFViewThemeDefaultOptions = {
+const defaultThemeOptions: ThemeDefaultPDFOptions = {
   showSkillsInWorkExperience: true,
 };
 
@@ -22,10 +22,10 @@ interface PDFViewProps {
   skillsForUser: SkillForUser[];
   companies: Company[];
   education: EducationType[];
-  themeOptions?: PDFViewThemeDefaultOptions;
+  themeOptions?: ThemeDefaultPDFOptions;
 }
 
-export const PDFViewThemeDefault = ({
+export const ThemeDefaultPDF = ({
   user,
   skillsForUser,
   companies,

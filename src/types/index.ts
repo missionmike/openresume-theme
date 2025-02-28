@@ -1,3 +1,5 @@
+export type ThemeName = "default";
+
 export interface Skill {
   id: string;
   name: string;

@@ -1,5 +1,5 @@
 import { Box, Divider, Typography } from "@mui/material";
-import { Section, SectionSubtitle, SectionTitle, fontSize } from "../styled";
+import { Section, SectionSubtitle, SectionTitle, fontSize } from "./styled";
 
 import { Company } from "@/types";
 import { formatLongDate } from "@/lib/format";

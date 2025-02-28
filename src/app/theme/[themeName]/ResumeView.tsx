@@ -1,35 +1,20 @@
 "use client";
 
-import { Company, Education, SkillForUser, Social, User } from "@/types";
-
 import { ThemeDefault } from "./theme";
-import { ThemeName } from "./page";
+import { ThemeName } from "@/types";
+import { themeDefaultSampleData } from "./theme/Default/sampleData";
 
-export const ResumeView = ({
-  themeName,
-  user,
-  socials,
-  skillsForUser,
-  companies,
-  education,
-}: {
-  themeName: ThemeName;
-  user: User;
-  socials: Social[];
-  skillsForUser: SkillForUser[];
-  companies: Company[];
-  education: Education[];
-}) => {
+export const ResumeView = ({ themeName }: { themeName: ThemeName }) => {
   switch (themeName) {
     case "default":
     default:
       return (
         <ThemeDefault
-          user={user}
-          socials={socials}
-          skillsForUser={skillsForUser}
-          companies={companies}
-          education={education}
+          user={themeDefaultSampleData.data.resume.user}
+          socials={themeDefaultSampleData.data.resume.socials}
+          skillsForUser={themeDefaultSampleData.data.resume.skillsForUser}
+          companies={themeDefaultSampleData.data.resume.companies}
+          education={themeDefaultSampleData.data.resume.education}
         />
       );
   }

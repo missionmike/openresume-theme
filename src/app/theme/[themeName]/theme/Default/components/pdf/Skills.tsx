@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
-import { Section, SectionTitle, fontSize } from "../styled";
+import { Section, SectionTitle, fontSize } from "./styled";
 
 import React from "react";
 import { SkillForUser } from "@/types";
-import { groupSkillsForUserByYearExperience } from "../../util";
+import { groupSkillsForUserByYearExperience } from "@/util/structure";
 
 export const Skills = ({ skillsForUser }: { skillsForUser: SkillForUser[] }) => {
   const skillsForUserBySkill = groupSkillsForUserByYearExperience(skillsForUser);

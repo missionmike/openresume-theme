@@ -1,4 +1,4 @@
-import { Section, SectionSubtitle, SectionTitle } from "../styled";
+import { Section, SectionSubtitle, SectionTitle } from "./styled";
 
 import { Education as EducationType } from "@/types";
 import React from "react";

@@ -1,17 +1,7 @@
 import { SOCIAL_MEDIA_PLATFORMS } from "@/constants";
 import { Social } from "@/types";
 
-export const getSocialMediaPlatformByHostname = (hostname: string) => {
-  for (const [key, value] of Object.entries(SOCIAL_MEDIA_PLATFORMS)) {
-    if (key === hostname) {
-      return value;
-    }
-  }
-
-  return SOCIAL_MEDIA_PLATFORMS.website;
-};
-
-export const getSocialMediaPlatformByPlatformName = (platform: string) => {
+const getSocialMediaPlatformByPlatformName = (platform: string) => {
   for (const [, value] of Object.entries(SOCIAL_MEDIA_PLATFORMS)) {
     if (value.name.toLowerCase() === platform) {
       return value;

@@ -6,5 +6,5 @@ export const useIsResumePage = () => {
   // Resume page path is typically /r/[username]
   const pathParts = pathname.split("/");
 
-  return pathParts.length > 1 && pathParts[1] === "r";
+  return pathParts.length > 1 && pathParts[1] === "theme";
 };

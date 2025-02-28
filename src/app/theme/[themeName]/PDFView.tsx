@@ -1,22 +1,18 @@
 "use client";
 
 import { Box, Button } from "@mui/material";
-import { Company, Education, SkillForUser, User } from "@/types";
 
-import { PDFViewThemeDefault } from "./pdf-theme";
-import { ThemeName } from "../page";
+import { ThemeDefaultPDF } from "./theme/Default/ThemeDefaultPDF";
+import { ThemeName } from "@/types";
 import html2pdf from "html2pdf.js";
+import { themeDefaultSampleData } from "./theme/Default/sampleData";
 import { useRef } from "react";
 
 interface PDFViewProps {
   themeName: ThemeName;
-  user: User;
-  skillsForUser: SkillForUser[];
-  companies: Company[];
-  education: Education[];
 }
 
-export const PDFView = ({ themeName, user, skillsForUser, companies, education }: PDFViewProps) => {
+export const PDFView = ({ themeName }: PDFViewProps) => {
   const pdfRef = useRef<HTMLDivElement>(null);
 
   const handleGeneratePdf = () => {
@@ -45,11 +41,11 @@ export const PDFView = ({ themeName, user, skillsForUser, companies, education }
       case "default":
       default:
         return (
-          <PDFViewThemeDefault
-            user={user}
-            skillsForUser={skillsForUser}
-            companies={companies}
-            education={education}
+          <ThemeDefaultPDF
+            user={themeDefaultSampleData.data.resume.user}
+            skillsForUser={themeDefaultSampleData.data.resume.skillsForUser}
+            companies={themeDefaultSampleData.data.resume.companies}
+            education={themeDefaultSampleData.data.resume.education}
             themeOptions={{ showSkillsInWorkExperience: false }}
           />
         );

@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { User } from "@/types";
-import { fontSize } from "../styled";
+import { fontSize } from "./styled";
 
 export const Header = ({ user }: { user: User }) => (
   <>

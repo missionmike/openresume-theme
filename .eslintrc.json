@@ -2,6 +2,5 @@
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
     "no-console": "error"
-  },
-  "ignorePatterns": ["src/prisma/client/**/*"]
+  }
 }

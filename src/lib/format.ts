@@ -45,28 +45,3 @@ export const formatShortDate = (dateStr: Dayjs | string | null | undefined) => {
   // Handle all other cases.
   return dayjs(dateStr).format("YYYY-MM");
 };
-
-/**
- * Helper to convert a timestamp to a date.
- *
- * @param {string} timestamp the timestamp to convert.
- * @returns {Date} the date object.
- */
-export const timestampToDate = (timestamp: string | number | null | undefined) => {
-  if (!timestamp) return null;
-
-  if (typeof timestamp === "number") return new Date(timestamp);
-
-  return new Date(parseInt(timestamp, 10));
-};
-
-/**
- * Helper to remove the leading zero from a string.
- *
- * @param {string} str the string to remove the leading zero from.
- * @returns {string} the string without the leading zero.
- */
-export const removeLeadingZero = (str: string) => {
-  if (str.startsWith("0")) return str.substring(1);
-  return str;
-};

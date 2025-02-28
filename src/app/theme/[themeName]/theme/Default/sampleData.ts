@@ -1,6 +1,6 @@
 import { Response } from "@/types/index";
 
-export const response: Response = {
+export const themeDefaultSampleData: Response = {
   data: {
     resume: {
       user: {
