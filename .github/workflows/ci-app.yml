@@ -1,0 +1,40 @@
+name: "CI: App"
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches: [main]
+    paths:
+      - "**.ts"
+      - "**.tsx"
+      - "**.scss"
+      - "**.js"
+      - "**.mjs"
+      - "**.css"
+      - "**.json"
+      - "**.yml"
+  workflow_dispatch:
+
+env:
+  NEXT_PUBLIC_ENVIRONMENT_NAME: ci
+
+jobs:
+  code-tests:
+    name: Test Code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup-dependencies
+
+      - name: Check formatting
+        run: npm run prettier
+
+      - name: Check lint
+        run: npm run lint
+
+      - name: Check types
+        run: npm run types:check
+
+      - name: Run tests
+        run: npm run test:coverage
