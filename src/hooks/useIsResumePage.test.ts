@@ -9,7 +9,7 @@ jest.mock("next/navigation", () => ({
 
 describe("useIsResumePage", () => {
   it("should return true for resume page path", () => {
-    (usePathname as jest.Mock).mockReturnValue("/r/username");
+    (usePathname as jest.Mock).mockReturnValue("/theme/default");
     const { result } = renderHook(() => useIsResumePage());
     expect(result.current).toBe(true);
   });
