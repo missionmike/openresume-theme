@@ -13,7 +13,3 @@ runs:
     - name: Install dependencies
       shell: bash
       run: npm ci
-
-    - name: Prisma Generate
-      shell: bash
-      run: npm run prisma:generate
