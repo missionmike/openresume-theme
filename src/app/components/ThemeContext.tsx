@@ -1,6 +1,6 @@
 "use client";
 
-import { SetStateAction, createContext, useEffect, useState } from "react";
+import React, { SetStateAction, createContext, useEffect, useState } from "react";
 
 export type ThemeAppearance = "dark" | "light";
 
