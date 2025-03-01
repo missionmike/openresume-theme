@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
 import { ThemeProvider, createTheme } from "@mui/material";
 
-import { ThemeAppearanceContext } from "@/app/components/ThemeContext";
+import React from "react";
+import { ThemeAppearance } from "@/types";
 
 /**
  * Since this theme uses React MUI, we need to wrap the entire theme in a ThemeProvider.
@@ -10,9 +10,13 @@ import { ThemeAppearanceContext } from "@/app/components/ThemeContext";
  * @param {React.ReactNode} children
  * @returns {React.ReactNode}
  */
-export const MUIThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const { themeAppearance } = useContext(ThemeAppearanceContext);
-
+export const MUIThemeProvider = ({
+  children,
+  themeAppearance = "light",
+}: {
+  children: React.ReactNode;
+  themeAppearance?: ThemeAppearance;
+}) => {
   const theme = createTheme({
     palette: {
       primary: {

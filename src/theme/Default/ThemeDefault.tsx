@@ -5,22 +5,25 @@ import { Education } from "./components/Education";
 import { MUIThemeProvider } from "./MUIThemeProvider";
 import { ResumeHeading } from "./components/ResumeHeading";
 import { Skills } from "./components/Skills/Skills";
+import { ThemeAppearance } from "@/types";
 import { WorkExperience } from "./components/WorkExperience/WorkExperience";
 
 export const ThemeDefault = ({
+  themeAppearance,
   user,
   socials,
   skillsForUser,
   companies,
   education,
 }: {
+  themeAppearance: ThemeAppearance;
   user: User;
   socials: Social[];
   skillsForUser: SkillForUser[];
   companies: Company[];
   education: EducationType[];
 }) => (
-  <MUIThemeProvider>
+  <MUIThemeProvider themeAppearance={themeAppearance}>
     <Box
       component="main"
       sx={{

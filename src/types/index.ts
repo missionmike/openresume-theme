@@ -1,3 +1,5 @@
+export type ThemeAppearance = "dark" | "light";
+
 export type ThemeName = "default";
 
 export interface Skill {

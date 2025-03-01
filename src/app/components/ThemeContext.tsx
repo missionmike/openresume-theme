@@ -2,7 +2,7 @@
 
 import React, { SetStateAction, createContext, useEffect, useState } from "react";
 
-export type ThemeAppearance = "dark" | "light";
+import { ThemeAppearance } from "@/types";
 
 interface ThemeAppearanceProviderProps {
   themeAppearance: ThemeAppearance;
