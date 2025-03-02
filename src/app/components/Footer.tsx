@@ -3,13 +3,10 @@
 import { Box, Typography } from "@mui/material";
 
 import { MuiLink } from "@/components/MuiLink";
-import React from "react";
-import { getBaseUrl } from "@/util/url";
 import { useIsDesktop } from "@/hooks/useIsDesktop";
 import { useIsResumePage } from "@/hooks/useIsResumePage";
 
 export const Footer = () => {
-  const baseUrl = getBaseUrl();
   const isDesktop = useIsDesktop();
   const isResumePage = useIsResumePage();
 
@@ -40,7 +37,7 @@ export const Footer = () => {
           textAlign: "center",
         }}
       >
-        <MuiLink href={baseUrl}>openresume.org</MuiLink>
+        <MuiLink href="/">openresume.org</MuiLink>
         <Box>
           <Typography variant="caption" sx={{ textAlign: "center" }}>
             &copy; {new Date().getFullYear()} OpenResume. All rights reserved.

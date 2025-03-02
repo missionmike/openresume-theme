@@ -26,9 +26,6 @@ on:
       - "**.yml"
   workflow_dispatch:
 
-env:
-  NEXT_PUBLIC_ENVIRONMENT_NAME: ci
-
 jobs:
   code-tests:
     name: Test Code
