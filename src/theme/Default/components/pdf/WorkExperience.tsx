@@ -22,7 +22,7 @@ export const WorkExperience = ({ companies, showSkills }: SectionWorkExperienceP
             </span>
           </SectionSubtitle>
           <Divider />
-          {company?.positions.map((position) => {
+          {company?.positions?.map((position) => {
             return (
               <Box key={position.id} sx={{ mb: 2 }}>
                 <SectionSubtitle>
@@ -33,7 +33,7 @@ export const WorkExperience = ({ companies, showSkills }: SectionWorkExperienceP
                     {position?.endDate ? formatLongDate(position.endDate) : "present"}
                   </Typography>
                 </SectionSubtitle>
-                {position.projects.map((project, index) => {
+                {position?.projects?.map((project, index) => {
                   return (
                     <Typography
                       key={project.id}
