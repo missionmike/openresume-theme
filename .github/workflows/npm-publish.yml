@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          # Fetch all history and tags
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: ./.github/actions/setup-dependencies
 
@@ -35,9 +39,10 @@ jobs:
             npm version patch
           fi
 
-          # Push tag back to the repository
+          # Push tag back to the repository with the GITHUB_TOKEN
           git push --follow-tags
 
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
