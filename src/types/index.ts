@@ -19,6 +19,7 @@ export interface Project {
   name: string;
   description: string | null;
   skillsForProject: SkillForProject[];
+  sortIndex: number;
 }
 
 export interface Position {
@@ -26,7 +27,7 @@ export interface Position {
   title: string;
   startDate: string;
   endDate: string | null;
-  projects: Project[];
+  projects?: Project[];
 }
 
 export interface Company {
@@ -35,7 +36,7 @@ export interface Company {
   location: string;
   startDate: string;
   endDate: string | null;
-  positions: Position[];
+  positions?: Position[];
 }
 
 export interface Education {
