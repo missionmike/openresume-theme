@@ -1,0 +1,43 @@
+name: Publish npm Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup-dependencies
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build
+        run: npm run build-lib
+
+      - name: Version and publish
+        run: |
+          # Configure git user
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+          # Determine version bump type (you can adjust this logic)
+          if git log -1 --pretty=%B | grep -q "\[major\]"; then
+            npm version major
+          elif git log -1 --pretty=%B | grep -q "\[minor\]"; then
+            npm version minor
+          else
+            npm version patch
+          fi
+
+          # Push tag back to the repository
+          git push --follow-tags
+
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

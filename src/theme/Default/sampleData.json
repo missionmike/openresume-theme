@@ -1,0 +1,583 @@
+{
+  "data": {
+    "resume": {
+      "user": {
+        "id": "cm667ueei0000q8n1kuik8734",
+        "name": "John Doe",
+        "email": "john@openresume.org",
+        "displayEmail": "johnny.doe@openresume.org",
+        "location": "Los Angeles, CA",
+        "title": "Designer",
+        "siteTitle": "John Doe's OpenResume",
+        "siteDescription": null,
+        "siteImage": null
+      },
+      "socials": [
+        {
+          "id": "cm6vo6u2m0001qjmta1uz8xgd",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "platform": "github",
+          "ref": "missionmike"
+        },
+        {
+          "id": "cm6vo6u6h0003qjmtqym93m8a",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "platform": "linkedin",
+          "ref": "michael-dinerstein"
+        },
+        {
+          "id": "cm6vo6u8f0005qjmt3anbw517",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "platform": "x",
+          "ref": "missionmikedev"
+        },
+        {
+          "id": "cm6vo6uac0007qjmt6oo9zwit",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "platform": "website",
+          "ref": "https://www.missionmike.dev"
+        }
+      ],
+      "skillsForUser": [
+        {
+          "id": "cm6vok39e001hqjmtrgutonaf",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": { "id": "cm667yv0w013fq8n1tj18q87p", "name": "CSS", "icon": "logos:css-3" },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3da001jqjmtif406jv6",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": { "id": "cm6686bci02wkq8n1hqnzu16w", "name": "HTML", "icon": "logos:html-5" },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2022,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3f7001lqjmtid6ooijy",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm6687wto03afq8n1r577zy89",
+            "name": "JavaScript",
+            "icon": "logos:javascript"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2023,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3h5001nqjmta2mcssjg",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668b7ge0434q8n1x83rswbn",
+            "name": "MongoDB",
+            "icon": "skill-icons:mongodb"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3j3001pqjmtq2xh5bfp",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668bkqu046cq8n1qt6z80w0",
+            "name": "MySQL",
+            "icon": "logos:mysql-icon"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2024,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3l0001rqjmtqco2exhd",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668c3w304azq8n1v9xze4bi",
+            "name": "Node.js",
+            "icon": "akar-icons:node-fill"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2022,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3my001tqjmtp0j3jt9i",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": { "id": "cm668dt8r04psq8n1sak089qe", "name": "PHP", "icon": "devicon:php" },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3ov001vqjmtg6sybtjn",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668e6mc04t1q8n12dwno2rt",
+            "name": "PostgreSQL",
+            "icon": "devicon:postgresql"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2020,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3qs001xqjmt602r148l",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668eyaj04zsq8n1ncmo4s05",
+            "name": "Python",
+            "icon": "devicon:python"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3sp001zqjmtjq27gbhv",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": { "id": "cm668feg1053qq8n19cooz2k5", "name": "React", "icon": "devicon:react" },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2020,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3un0021qjmtsp5f47kr",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668feo7053sq8n144wnz53g",
+            "name": "React Redux",
+            "icon": "devicon:redux"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3wk0023qjmtfoxgvs1i",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668flau055eq8n13cgqrubg",
+            "name": "Redis",
+            "icon": "devicon:redis-wordmark"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2024,
+          "totalYears": null
+        },
+        {
+          "id": "cm6vok3yh0025qjmt1d36sujx",
+          "userId": "cm667ueei0000q8n1kuik8734",
+          "skill": {
+            "id": "cm668kox906e0q8n1rc6zxge6",
+            "name": "TypeScript",
+            "icon": "devicon:typescript"
+          },
+          "icon": null,
+          "description": "This is a skill for a USER",
+          "yearStarted": 2022,
+          "totalYears": null
+        }
+      ],
+      "companies": [
+        {
+          "id": "cm667uex40003q8n1tgsuik5m",
+          "name": "OpenResume, Inc.",
+          "location": "Los Angeles, CA",
+          "startDate": "1705825877364",
+          "endDate": null,
+          "positions": [
+            {
+              "id": "cm667ufyc000fq8n1syoor128",
+              "title": "Software Engineer",
+              "startDate": "1705825877364",
+              "endDate": null,
+              "projects": [
+                {
+                  "id": "cm6vo6wuq000hqjmt96eqqc5p",
+                  "name": "I contributed to project 1 significantly by doing X, Y, and Z.",
+                  "description": "This is the first project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok6b2002xqjmtjcbpr7kj",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3yh0025qjmt1d36sujx",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668kox906e0q8n1rc6zxge6",
+                          "name": "TypeScript",
+                          "icon": "devicon:typescript"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok6ev002zqjmt5n07anom",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3l0001rqjmtqco2exhd",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668c3w304azq8n1v9xze4bi",
+                          "name": "Node.js",
+                          "icon": "akar-icons:node-fill"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "cm6vo6wym000jqjmt7p5sgeqe",
+                  "name": "Expanded the project 2 by adding A, B, and C.",
+                  "description": "This is the second project description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok6qf0031qjmt3gyifj8h",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3h5001nqjmta2mcssjg",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668b7ge0434q8n1x83rswbn",
+                          "name": "MongoDB",
+                          "icon": "skill-icons:mongodb"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok6sc0033qjmtg2ce8rbc",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok39e001hqjmtrgutonaf",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm667yv0w013fq8n1tj18q87p",
+                          "name": "CSS",
+                          "icon": "logos:css-3"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "cm6vo6x0k000lqjmtbkb5djmd",
+                  "name": "Increased annual sign-ups by 20% in project 3.",
+                  "description": "This is the third project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok73v0035qjmt4knichmn",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3un0021qjmtsp5f47kr",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668feo7053sq8n144wnz53g",
+                          "name": "React Redux",
+                          "icon": "devicon:redux"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok75s0037qjmtltu8xjb5",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3da001jqjmtif406jv6",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm6686bci02wkq8n1hqnzu16w",
+                          "name": "HTML",
+                          "icon": "logos:html-5"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cm667uf3c0005q8n1o0qn46y8",
+          "name": "Google",
+          "location": "Mountain View, CA",
+          "startDate": "1674289877364",
+          "endDate": "1705825877364",
+          "positions": [
+            {
+              "id": "cm667ug4i000hq8n1yp9ht2e6",
+              "title": "Software Engineer",
+              "startDate": "1674289877364",
+              "endDate": "1705825877364",
+              "projects": [
+                {
+                  "id": "cm6vo6x4f000nqjmt2lzkhvtz",
+                  "name": "I contributed to project 1 significantly by doing X, Y, and Z.",
+                  "description": "This is the first project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok7hb0039qjmt5wk087pe",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3yh0025qjmt1d36sujx",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668kox906e0q8n1rc6zxge6",
+                          "name": "TypeScript",
+                          "icon": "devicon:typescript"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok7j8003bqjmtgvxk5ktq",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3qs001xqjmt602r148l",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668eyaj04zsq8n1ncmo4s05",
+                          "name": "Python",
+                          "icon": "devicon:python"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "cm6vo6x6c000pqjmtieq5471l",
+                  "name": "Expanded the project 2 by adding A, B, and C.",
+                  "description": "This is the second project description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok7us003dqjmt6mpfl3wg",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3qs001xqjmt602r148l",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668eyaj04zsq8n1ncmo4s05",
+                          "name": "Python",
+                          "icon": "devicon:python"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok7wp003fqjmtcziwndc7",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3h5001nqjmta2mcssjg",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668b7ge0434q8n1x83rswbn",
+                          "name": "MongoDB",
+                          "icon": "skill-icons:mongodb"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "cm6vo6x8a000rqjmtqllhndpq",
+                  "name": "Increased annual sign-ups by 20% in project 3.",
+                  "description": "This is the third project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok888003hqjmtextb00q5",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3qs001xqjmt602r148l",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668eyaj04zsq8n1ncmo4s05",
+                          "name": "Python",
+                          "icon": "devicon:python"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok8a5003jqjmtwahgw7lj",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3j3001pqjmtq2xh5bfp",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668bkqu046cq8n1qt6z80w0",
+                          "name": "MySQL",
+                          "icon": "logos:mysql-icon"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cm667uf7h0007q8n1hhzq0h57",
+          "name": "Facebook",
+          "location": "Menlo Park, CA",
+          "startDate": "1642753877364",
+          "endDate": "1674289877364",
+          "positions": [
+            {
+              "id": "cm667ug8o000jq8n144o14xv2",
+              "title": "Software Engineer",
+              "startDate": "1642753877364",
+              "endDate": "1674289877364",
+              "projects": [
+                {
+                  "id": "cm6vo6xc4000tqjmtefbljrtv",
+                  "name": "I contributed to project 1 significantly by doing X, Y, and Z.",
+                  "description": "This is the first project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok8ln003lqjmtm4w4hjl9",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3yh0025qjmt1d36sujx",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668kox906e0q8n1rc6zxge6",
+                          "name": "TypeScript",
+                          "icon": "devicon:typescript"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok8nm003nqjmtmdjcl1nj",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3ov001vqjmtg6sybtjn",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668e6mc04t1q8n12dwno2rt",
+                          "name": "PostgreSQL",
+                          "icon": "devicon:postgresql"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "cm6vo6xe2000vqjmtospnh8kh",
+                  "name": "Expanded the project 2 by adding A, B, and C.",
+                  "description": "This is the second project description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok8z3003pqjmt5v4ng4pq",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok39e001hqjmtrgutonaf",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm667yv0w013fq8n1tj18q87p",
+                          "name": "CSS",
+                          "icon": "logos:css-3"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok910003rqjmtfn74u5f7",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3my001tqjmtp0j3jt9i",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668dt8r04psq8n1sak089qe",
+                          "name": "PHP",
+                          "icon": "devicon:php"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "cm6vo6xg1000xqjmti62anmpy",
+                  "name": "Increased annual sign-ups by 20% in project 3.",
+                  "description": "This is the third project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "sortIndex": 0,
+                  "skillsForProject": [
+                    {
+                      "id": "cm6vok9cg003tqjmtggcwkhs2",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3un0021qjmtsp5f47kr",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm668feo7053sq8n144wnz53g",
+                          "name": "React Redux",
+                          "icon": "devicon:redux"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cm6vok9ed003vqjmtmw3fv3qw",
+                      "description": "This is a skill for a PROJECT",
+                      "skillForUser": {
+                        "id": "cm6vok3f7001lqjmtid6ooijy",
+                        "icon": null,
+                        "userId": "cm667ueei0000q8n1kuik8734",
+                        "skill": {
+                          "id": "cm6687wto03afq8n1r577zy89",
+                          "name": "JavaScript",
+                          "icon": "logos:javascript"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "education": [
+        {
+          "id": "cm667uj3x001rq8n16q6gg9v0",
+          "school": "University of Southern California",
+          "degree": "B.S. Computer Science",
+          "dateAwarded": "1737448282941"
+        }
+      ]
+    }
+  }
+}
