@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: npm run build-lib
 
-      - name: Version and publish
+      - name: Version bump and push tag
         run: |
           # Configure git user
           git config --global user.name "GitHub Actions Bot"
@@ -39,10 +39,13 @@ jobs:
             npm version patch
           fi
 
-          # Push tag back to the repository with the GITHUB_TOKEN
+          # Push tag back to the repository
           git push --follow-tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          npm publish
+      # Separate step for npm publish with proper authentication
+      - name: Publish to npm
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
