@@ -1,13 +1,33 @@
 import { Box, Container, Typography } from "@mui/material";
 
+import { Metadata } from "next";
 import { MuiLink } from "@/components/MuiLink";
+import { P } from "@/app/components/Typography";
 import React from "react";
 
-const P = ({ children }: { children: React.ReactNode }) => (
-  <Typography component="p" sx={{ lineHeight: 2 }}>
-    {children}
-  </Typography>
-);
+const title = "OpenResume Themes | Build Your Free Interactive Resume Theme";
+const description =
+  "OpenResume is a free interactive resume builder. Themes are customizable and open-source for all users to use.";
+
+export const metadata: Metadata = {
+  title: description,
+  authors: [
+    {
+      name: "Michael R. Dinerstein",
+    },
+  ],
+  openGraph: {
+    title,
+    description,
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 902,
+        height: 556,
+      },
+    ],
+  },
+};
 
 export default async function HomePage() {
   return (
@@ -19,13 +39,25 @@ export default async function HomePage() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          textAlign: "center",
+          textAlign: { xs: "left", sm: "center" },
         }}
       >
-        <Typography component="h1" sx={{ mb: 2, typography: { sm: "h2", xs: "h4" } }}>
+        <Typography
+          component="h1"
+          sx={{
+            mb: 2,
+            typography: { sm: "h2", xs: "h4" },
+          }}
+        >
           OpenResume Themes
         </Typography>
-        <Typography component="h2" sx={{ mb: 4, typography: { sm: "h4", xs: "body1" } }}>
+        <Typography
+          component="h2"
+          sx={{
+            mb: 4,
+            typography: { sm: "h4", xs: "body1" },
+          }}
+        >
           Customizable Open-Source Themes for{" "}
           <MuiLink href="https://www.openresume.org" target="_blank">
             OpenResume
@@ -37,7 +69,8 @@ export default async function HomePage() {
             OpenResume
           </MuiLink>{" "}
           that can be used to customize your resume and portfolio.
-          <br />
+        </P>
+        <P>
           Themes that are created by the community are listed here, and made available to all users
           in the OpenResume platform.
         </P>
@@ -45,10 +78,11 @@ export default async function HomePage() {
           How can I contribute?
         </Typography>
         <P>
-          Visit the open-source repository on GitHub here:{" "}
+          Visit the open-source repository on
           <MuiLink href="https://github.com/missionmike/openresume-theme" target="_blank">
-            https://github.com/missionmike/openresume-theme
+            GitHub
           </MuiLink>
+          .
         </P>
         <P>
           Follow the instructions in the README to create your own theme, and submit a pull request
