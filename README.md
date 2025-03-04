@@ -22,8 +22,6 @@ it's merged.
 
 ## Developer Setup
 
-### Initial Setup
-
 To develop locally, first fork this repository and follow these steps:
 
 1. Run `npm i` to install dependencies.
@@ -33,16 +31,17 @@ To develop locally, first fork this repository and follow these steps:
 > Note: You'll see an `.env.example` file, but at this time there are no needed environment
 > variables. The only variable is currently for a Google Tag Manager ID, which is not required.
 
-### Building Your Theme
+## Building Your Theme
 
 There are some steps and specifications required to build a theme.
 
-#### Data Types
+### Data Types
 
 First, get familiar with the data types ingested by a resume template. These can be found documented
-in `src/types/index.ts`
+in
+[src/types/index.ts](https://github.com/missionmike/openresume-theme/blob/main/src/types/index.ts)
 
-#### Folder Structure
+### Folder Structure
 
 The theme templates can be found in `src/themes/[theme-name]`.
 
@@ -54,7 +53,7 @@ theme as well, create a `ThemeSlickPDF.tsx` component.
 These components should ingest specific data, please see `src/theme/default/ThemeDefault.tsx` and
 `src/theme/default/ThemeDefaultPDF.tsx` for reference, e.g.:
 
-##### `ThemeDefault.tsx` Example
+#### `ThemeDefault.tsx` Example
 
 ```jsx
 export const ThemeDefault = ({
@@ -76,7 +75,7 @@ export const ThemeDefault = ({
 );
 ```
 
-##### `ThemeDefaultPDF.tsx` Example
+#### `ThemeDefaultPDF.tsx` Example
 
 ```jsx
 interface PDFViewProps {
@@ -102,34 +101,36 @@ export const ThemeDefaultPDF = ({
 > they're intended for print! The way it initially renders, is how it should end up being exported
 > to PDF via the interface.
 
-#### Previewing Your Theme
+### Previewing Your Theme
 
 To preview your work as you develop a theme, first you need to ensure the theme can be viewed. Do
 this by modifying `src/app/theme/[themeName]/ResumeView.tsx` and
 `src/app/theme/[themeName]/PDFView.tsx` to ensure it can be loaded:
 
-##### `ResumeView.tsx` Update
+#### `ResumeView.tsx` Update
 
 ```jsx
 switch (themeName) {
     case "slick":
-        return (
-            <ThemeSlick // etc.
-            />
-        )
+      return (
+        <ThemeSlick
+          // pass props, etc.
+        />
+      );
     case "default":
     default:
       return (
-        <ThemeDefault // etc.
+        <ThemeDefault
+          // pass props, etc.
         />
-      )
+      );
 ```
 
 Follow suit in `PDFView.tsx` as well.
 
 Then, you should be able to preview your work at http://localhost:3000/theme/slick
 
-#### Sample Data
+### Sample Data
 
 By default, the sample resume data is loaded from `src/theme/sampleData.json` and transferred
 through `src/theme/sampleData.ts` for strong typing.
@@ -139,7 +140,7 @@ your own `sampleData.json` and `sampleData.ts` files within your `src/theme/[the
 Then, ensure they're imported in the `src/app/theme/[themeName]/ResumeView.tsx` and
 `src/app/theme/[themeName]/PDFView.tsx` files to be passed into your example page.
 
-### Testing Your Theme
+## Testing Your Theme
 
 Jest unit and snapshot tests are encouraged for each theme. PRs cannot be merged without having
 solid tests to accompany any new templates.
