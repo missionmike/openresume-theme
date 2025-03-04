@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/generateRobotsTxt.ts",
     "build": "next build",
     "build-lib": "tsup src/exports.ts --format esm,cjs --dts --tsconfig tsconfig.build.json --external react",
     "start": "next start",
