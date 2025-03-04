@@ -3,13 +3,13 @@
     "resume": {
       "user": {
         "id": "cm667ueei0000q8n1kuik8734",
-        "name": "John Doe",
-        "email": "john@openresume.org",
-        "displayEmail": "johnny.doe@openresume.org",
-        "location": "Los Angeles, CA",
-        "title": "Designer",
-        "siteTitle": "John Doe's OpenResume",
-        "siteDescription": null,
+        "name": "Taylor Everglow",
+        "email": "taylor.everglow@techdev.com",
+        "displayEmail": "taylor.everglow@techdev.com",
+        "location": "San Francisco, CA",
+        "title": "Full Stack Software Engineer",
+        "siteTitle": "Taylor Everglow's Professional Portfolio",
+        "siteDescription": "Full Stack Engineer specializing in modern web technologies",
         "siteImage": null
       },
       "socials": [
@@ -17,44 +17,52 @@
           "id": "cm6vo6u2m0001qjmta1uz8xgd",
           "userId": "cm667ueei0000q8n1kuik8734",
           "platform": "github",
-          "ref": "missionmike"
+          "ref": "tayloreverglow-dev"
         },
         {
           "id": "cm6vo6u6h0003qjmtqym93m8a",
           "userId": "cm667ueei0000q8n1kuik8734",
           "platform": "linkedin",
-          "ref": "michael-dinerstein"
+          "ref": "taylor-everglow-developer"
         },
         {
           "id": "cm6vo6u8f0005qjmt3anbw517",
           "userId": "cm667ueei0000q8n1kuik8734",
           "platform": "x",
-          "ref": "missionmikedev"
+          "ref": "tayloreverglow"
         },
         {
           "id": "cm6vo6uac0007qjmt6oo9zwit",
           "userId": "cm667ueei0000q8n1kuik8734",
           "platform": "website",
-          "ref": "https://www.missionmike.dev"
+          "ref": "https://www.tayloreverglow.dev"
         }
       ],
       "skillsForUser": [
         {
           "id": "cm6vok39e001hqjmtrgutonaf",
           "userId": "cm667ueei0000q8n1kuik8734",
-          "skill": { "id": "cm667yv0w013fq8n1tj18q87p", "name": "CSS", "icon": "logos:css-3" },
+          "skill": {
+            "id": "cm667yv0w013fq8n1tj18q87p",
+            "name": "CSS",
+            "icon": "logos:css-3"
+          },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2021,
+          "description": "Proficient in modern CSS, including Flexbox, Grid, and CSS-in-JS libraries",
+          "yearStarted": 2019,
           "totalYears": null
         },
         {
           "id": "cm6vok3da001jqjmtif406jv6",
           "userId": "cm667ueei0000q8n1kuik8734",
-          "skill": { "id": "cm6686bci02wkq8n1hqnzu16w", "name": "HTML", "icon": "logos:html-5" },
+          "skill": {
+            "id": "cm6686bci02wkq8n1hqnzu16w",
+            "name": "HTML",
+            "icon": "logos:html-5"
+          },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2022,
+          "description": "Semantic HTML with accessibility focus",
+          "yearStarted": 2019,
           "totalYears": null
         },
         {
@@ -66,8 +74,8 @@
             "icon": "logos:javascript"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2023,
+          "description": "Modern ES6+ JavaScript for frontend and backend development",
+          "yearStarted": 2018,
           "totalYears": null
         },
         {
@@ -79,8 +87,8 @@
             "icon": "skill-icons:mongodb"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2021,
+          "description": "Experience with MongoDB Atlas, aggregation pipelines, and schema design",
+          "yearStarted": 2019,
           "totalYears": null
         },
         {
@@ -92,8 +100,8 @@
             "icon": "logos:mysql-icon"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2024,
+          "description": "Database design, optimization, and complex query writing",
+          "yearStarted": 2020,
           "totalYears": null
         },
         {
@@ -105,17 +113,21 @@
             "icon": "akar-icons:node-fill"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2022,
+          "description": "Building RESTful APIs and microservices with Express.js",
+          "yearStarted": 2019,
           "totalYears": null
         },
         {
           "id": "cm6vok3my001tqjmtp0j3jt9i",
           "userId": "cm667ueei0000q8n1kuik8734",
-          "skill": { "id": "cm668dt8r04psq8n1sak089qe", "name": "PHP", "icon": "devicon:php" },
+          "skill": {
+            "id": "cm668dt8r04psq8n1sak089qe",
+            "name": "PHP",
+            "icon": "devicon:php"
+          },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2021,
+          "description": "Legacy system maintenance and modernization",
+          "yearStarted": 2018,
           "totalYears": null
         },
         {
@@ -127,7 +139,7 @@
             "icon": "devicon:postgresql"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
+          "description": "Advanced query optimization and relational database design",
           "yearStarted": 2020,
           "totalYears": null
         },
@@ -140,17 +152,21 @@
             "icon": "devicon:python"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2021,
+          "description": "Data processing, API development with FastAPI, and automation",
+          "yearStarted": 2019,
           "totalYears": null
         },
         {
           "id": "cm6vok3sp001zqjmtjq27gbhv",
           "userId": "cm667ueei0000q8n1kuik8734",
-          "skill": { "id": "cm668feg1053qq8n19cooz2k5", "name": "React", "icon": "devicon:react" },
+          "skill": {
+            "id": "cm668feg1053qq8n19cooz2k5",
+            "name": "React",
+            "icon": "devicon:react"
+          },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2020,
+          "description": "Building responsive, accessible component-based UIs",
+          "yearStarted": 2019,
           "totalYears": null
         },
         {
@@ -162,8 +178,8 @@
             "icon": "devicon:redux"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2021,
+          "description": "State management for complex applications with Redux Toolkit",
+          "yearStarted": 2020,
           "totalYears": null
         },
         {
@@ -175,8 +191,8 @@
             "icon": "devicon:redis-wordmark"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2024,
+          "description": "Caching, session storage, and pub/sub implementation",
+          "yearStarted": 2021,
           "totalYears": null
         },
         {
@@ -188,34 +204,34 @@
             "icon": "devicon:typescript"
           },
           "icon": null,
-          "description": "This is a skill for a USER",
-          "yearStarted": 2022,
+          "description": "Type-safe development for frontend and backend applications",
+          "yearStarted": 2020,
           "totalYears": null
         }
       ],
       "companies": [
         {
           "id": "cm667uex40003q8n1tgsuik5m",
-          "name": "OpenResume, Inc.",
-          "location": "Los Angeles, CA",
+          "name": "Dataflow Systems",
+          "location": "San Francisco, CA",
           "startDate": "1705825877364",
           "endDate": null,
           "positions": [
             {
               "id": "cm667ufyc000fq8n1syoor128",
-              "title": "Software Engineer",
+              "title": "Senior Software Engineer",
               "startDate": "1705825877364",
               "endDate": null,
               "projects": [
                 {
                   "id": "cm6vo6wuq000hqjmt96eqqc5p",
-                  "name": "I contributed to project 1 significantly by doing X, Y, and Z.",
-                  "description": "This is the first project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "name": "Transformed monolithic architecture into scalable microservices for business-critical applications",
+                  "description": "Spearheaded a transformative initiative to decompose a monolithic application into a robust microservices architecture, leading a cross-functional team of 4 engineers. Engineered a seamless migration strategy that eliminated single points of failure, resulting in 50% faster deployments, 30% reduction in system downtime, and dramatically improved scalability across all business-critical systems.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok6b2002xqjmtjcbpr7kj",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Implemented type-safe APIs",
                       "skillForUser": {
                         "id": "cm6vok3yh0025qjmt1d36sujx",
                         "icon": null,
@@ -229,7 +245,7 @@
                     },
                     {
                       "id": "cm6vok6ev002zqjmt5n07anom",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built scalable microservices",
                       "skillForUser": {
                         "id": "cm6vok3l0001rqjmtqco2exhd",
                         "icon": null,
@@ -245,13 +261,13 @@
                 },
                 {
                   "id": "cm6vo6wym000jqjmt7p5sgeqe",
-                  "name": "Expanded the project 2 by adding A, B, and C.",
-                  "description": "This is the second project description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "name": "Created real-time analytics platform processing 10,000 events per second for executive decision making",
+                  "description": "Architected and implemented an enterprise-grade real-time analytics dashboard capable of processing over 10,000 events per second with sub-millisecond latency. Developed innovative data aggregation algorithms and visualization techniques that transformed raw telemetry into actionable business intelligence, empowering C-suite executives to make data-driven decisions that increased operational efficiency by 25%.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok6qf0031qjmt3gyifj8h",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Designed schema for time-series data",
                       "skillForUser": {
                         "id": "cm6vok3h5001nqjmta2mcssjg",
                         "icon": null,
@@ -265,7 +281,7 @@
                     },
                     {
                       "id": "cm6vok6sc0033qjmtg2ce8rbc",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built responsive interface with advanced visualizations",
                       "skillForUser": {
                         "id": "cm6vok39e001hqjmtrgutonaf",
                         "icon": null,
@@ -281,13 +297,13 @@
                 },
                 {
                   "id": "cm6vo6x0k000lqjmtbkb5djmd",
-                  "name": "Increased annual sign-ups by 20% in project 3.",
-                  "description": "This is the third project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "name": "Redesigned customer portal experience improving engagement by 35% and reducing support tickets by 25%",
+                  "description": "Spearheaded a comprehensive redesign of the customer portal by implementing cutting-edge UI/UX principles and accessibility standards. Created an intuitive, responsive interface with personalized user journeys that increased user engagement by 35%, reduced support ticket volume by 25%, and boosted customer satisfaction scores to record highs. The redesign became a cornerstone of the company's successful rebranding initiative.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok73v0035qjmt4knichmn",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Implemented global state management",
                       "skillForUser": {
                         "id": "cm6vok3un0021qjmtsp5f47kr",
                         "icon": null,
@@ -301,7 +317,7 @@
                     },
                     {
                       "id": "cm6vok75s0037qjmtltu8xjb5",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built accessible components with semantic markup",
                       "skillForUser": {
                         "id": "cm6vok3da001jqjmtif406jv6",
                         "icon": null,
@@ -321,8 +337,8 @@
         },
         {
           "id": "cm667uf3c0005q8n1o0qn46y8",
-          "name": "Google",
-          "location": "Mountain View, CA",
+          "name": "CloudScale Technologies",
+          "location": "Seattle, WA",
           "startDate": "1674289877364",
           "endDate": "1705825877364",
           "positions": [
@@ -334,13 +350,13 @@
               "projects": [
                 {
                   "id": "cm6vo6x4f000nqjmt2lzkhvtz",
-                  "name": "I contributed to project 1 significantly by doing X, Y, and Z.",
-                  "description": "This is the first project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "name": "Redesigned API gateway infrastructure increasing request capacity by 200% with 40% lower latency",
+                  "description": "Orchestrated a complete redesign of the company's mission-critical API gateway infrastructure, implementing advanced routing algorithms and caching strategies. This architectural transformation improved request handling capacity by 200%, reduced latency by 40%, and enabled seamless integration with third-party services while maintaining enterprise-grade security standards and 99.99% uptime.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok7hb0039qjmt5wk087pe",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built robust type definitions for the API contract",
                       "skillForUser": {
                         "id": "cm6vok3yh0025qjmt1d36sujx",
                         "icon": null,
@@ -354,7 +370,7 @@
                     },
                     {
                       "id": "cm6vok7j8003bqjmtgvxk5ktq",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Created performance monitoring and scaling systems",
                       "skillForUser": {
                         "id": "cm6vok3qs001xqjmt602r148l",
                         "icon": null,
@@ -370,13 +386,13 @@
                 },
                 {
                   "id": "cm6vo6x6c000pqjmtieq5471l",
-                  "name": "Expanded the project 2 by adding A, B, and C.",
-                  "description": "This is the second project description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "name": "Engineered secure multi-tenant database solution supporting 500+ enterprise customers with strict data isolation",
+                  "description": "Engineered a sophisticated multi-tenant database architecture with dynamic schema generation that scaled seamlessly to support 500+ enterprise customers. Implemented industry-leading security practices including row-level encryption, parameterized queries, and comprehensive audit trails, ensuring perfect regulatory compliance while maintaining strict data isolation requirements and exceptional performance under high-concurrency workloads.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok7us003dqjmt6mpfl3wg",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Automated database provisioning and management",
                       "skillForUser": {
                         "id": "cm6vok3qs001xqjmt602r148l",
                         "icon": null,
@@ -390,7 +406,7 @@
                     },
                     {
                       "id": "cm6vok7wp003fqjmtcziwndc7",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Implemented sharding strategy for horizontal scaling",
                       "skillForUser": {
                         "id": "cm6vok3h5001nqjmta2mcssjg",
                         "icon": null,
@@ -406,13 +422,13 @@
                 },
                 {
                   "id": "cm6vo6x8a000rqjmtqllhndpq",
-                  "name": "Increased annual sign-ups by 20% in project 3.",
-                  "description": "This is the third project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "name": "Developed OAuth integration framework connecting with 20+ third-party services reducing customer churn by 15%",
+                  "description": "Designed and implemented a groundbreaking OAuth integration framework featuring plug-and-play connectivity with 20+ third-party services. This versatile system featured automatic token refresh, comprehensive error handling, and an intuitive developer experience. The framework dramatically enhanced platform stickiness, reduced customer churn by 15%, and became a key competitive advantage highlighted in sales materials.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok888003hqjmtextb00q5",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Created automation scripts for testing OAuth flows",
                       "skillForUser": {
                         "id": "cm6vok3qs001xqjmt602r148l",
                         "icon": null,
@@ -426,7 +442,7 @@
                     },
                     {
                       "id": "cm6vok8a5003jqjmtwahgw7lj",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built secure token storage and rotation system",
                       "skillForUser": {
                         "id": "cm6vok3j3001pqjmtq2xh5bfp",
                         "icon": null,
@@ -446,26 +462,26 @@
         },
         {
           "id": "cm667uf7h0007q8n1hhzq0h57",
-          "name": "Facebook",
-          "location": "Menlo Park, CA",
+          "name": "TechStart Inc.",
+          "location": "Austin, TX",
           "startDate": "1642753877364",
           "endDate": "1674289877364",
           "positions": [
             {
               "id": "cm667ug8o000jq8n144o14xv2",
-              "title": "Software Engineer",
+              "title": "Junior Software Engineer",
               "startDate": "1642753877364",
               "endDate": "1674289877364",
               "projects": [
                 {
                   "id": "cm6vo6xc4000tqjmtefbljrtv",
-                  "name": "I contributed to project 1 significantly by doing X, Y, and Z.",
-                  "description": "This is the first project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "name": "Optimized e-commerce platform performance cutting load times by 60% during peak traffic events",
+                  "description": "Revolutionized the performance of a high-traffic e-commerce platform by optimizing database queries and implementing sophisticated multi-layer caching strategies. These critical enhancements reduced page load times by 60% during peak shopping events, resulting in a 32% decrease in cart abandonment rate and enabling the platform to handle Black Friday traffic surge with zero downtime for the first time in company history.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok8ln003lqjmtm4w4hjl9",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Refactored legacy JavaScript to TypeScript",
                       "skillForUser": {
                         "id": "cm6vok3yh0025qjmt1d36sujx",
                         "icon": null,
@@ -479,7 +495,7 @@
                     },
                     {
                       "id": "cm6vok8nm003nqjmtmdjcl1nj",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Optimized complex database queries",
                       "skillForUser": {
                         "id": "cm6vok3ov001vqjmtg6sybtjn",
                         "icon": null,
@@ -495,13 +511,13 @@
                 },
                 {
                   "id": "cm6vo6xe2000vqjmtospnh8kh",
-                  "name": "Expanded the project 2 by adding A, B, and C.",
-                  "description": "This is the second project description. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "name": "Led responsive website redesign boosting mobile conversion rates by 45% through optimized UX",
+                  "description": "Championed the comprehensive frontend overhaul of the company's flagship website, implementing responsive design principles and progressive enhancement techniques. Created a device-agnostic user experience with lightning-fast interactions and optimized asset delivery, dramatically improving mobile conversion rates by 45% and earning recognition from the CEO as the most impactful marketing initiative of the year.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok8z3003pqjmt5v4ng4pq",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Implemented advanced responsive layouts",
                       "skillForUser": {
                         "id": "cm6vok39e001hqjmtrgutonaf",
                         "icon": null,
@@ -515,7 +531,7 @@
                     },
                     {
                       "id": "cm6vok910003rqjmtfn74u5f7",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built custom CMS integration",
                       "skillForUser": {
                         "id": "cm6vok3my001tqjmtp0j3jt9i",
                         "icon": null,
@@ -531,13 +547,13 @@
                 },
                 {
                   "id": "cm6vo6xg1000xqjmti62anmpy",
-                  "name": "Increased annual sign-ups by 20% in project 3.",
-                  "description": "This is the third project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "name": "Developed customer analytics dashboard increasing customer retention by 20% through data-driven insights",
+                  "description": "Developed a sophisticated internal analytics dashboard that transformed vast amounts of customer data into actionable insights through interactive visualizations and customizable reports. This powerful business intelligence tool enabled the marketing team to identify behavior patterns and optimize customer journeys, resulting in a remarkable 20% increase in customer retention and establishing data-driven decision making as a core company value.",
                   "sortIndex": 0,
                   "skillsForProject": [
                     {
                       "id": "cm6vok9cg003tqjmtggcwkhs2",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Built complex state management system",
                       "skillForUser": {
                         "id": "cm6vok3un0021qjmtsp5f47kr",
                         "icon": null,
@@ -551,7 +567,7 @@
                     },
                     {
                       "id": "cm6vok9ed003vqjmtmw3fv3qw",
-                      "description": "This is a skill for a PROJECT",
+                      "description": "Implemented interactive data visualizations",
                       "skillForUser": {
                         "id": "cm6vok3f7001lqjmtid6ooijy",
                         "icon": null,
@@ -573,9 +589,9 @@
       "education": [
         {
           "id": "cm667uj3x001rq8n16q6gg9v0",
-          "school": "University of Southern California",
+          "school": "University of California, Berkeley",
           "degree": "B.S. Computer Science",
-          "dateAwarded": "1737448282941"
+          "dateAwarded": "1611216000000"
         }
       ]
     }
