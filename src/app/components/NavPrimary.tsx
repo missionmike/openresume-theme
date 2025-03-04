@@ -14,6 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { MuiLink } from "@/components/MuiLink";
 import { ThemeAppearanceToggle } from "./ThemeAppearanceToggle";
 import Typography from "@mui/material/Typography";
+import { themeNavItems } from "@/theme/themeNavItems";
 
 export const NavPrimary = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -117,7 +118,9 @@ export const NavPrimary = () => {
                 marginBottom: 2,
               }}
             />
-            <NavItem text="Default Theme" icon={<HomeIcon />} href="/theme/default" />
+            {themeNavItems.map((navItem) => (
+              <NavItem key={navItem.text} {...navItem} />
+            ))}
           </List>
           <Box
             sx={{

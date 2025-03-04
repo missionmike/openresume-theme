@@ -3,6 +3,8 @@
 Anyone can contribute their own frontend theme design and implementation for
 [OpenResume](https://www.openresume.org).
 
+Browse the published themes available here: https://theme.openresume.org/
+
 ## The Project
 
 While the [OpenResume](https://www.openresume.org) backend and infrastructure is closed-source, the
@@ -30,6 +32,17 @@ To develop locally, first fork this repository and follow these steps:
 
 > Note: You'll see an `.env.example` file, but at this time there are no needed environment
 > variables. The only variable is currently for a Google Tag Manager ID, which is not required.
+
+## Development Process
+
+1. Checkout a new branch based on the `main` branch, e.g.: `feature/my-new-theme`
+2. When your work is done on this branch, open a pull request into the original repository's
+   `develop` branch.
+3. After the theme is merged into the `develop` branch, you should be able to view it live on
+   https://themetest.openresume.org as well as access the theme for testing on
+   https://test.openresume.org (only allow-listed members can sign in here, please request access).
+4. From there, the theme will be merged to `main` branch, deployed to production and made available
+   to all users!
 
 ## Building Your Theme
 
@@ -139,6 +152,11 @@ If you'd like to create your own sample data based on this format to test variou
 your own `sampleData.json` and `sampleData.ts` files within your `src/theme/[theme-name]/` folder.
 Then, ensure they're imported in the `src/app/theme/[themeName]/ResumeView.tsx` and
 `src/app/theme/[themeName]/PDFView.tsx` files to be passed into your example page.
+
+### Adding to the Nav Menu
+
+Add the theme to the nav menu by adding a new entry in the `src/theme/themeNavItems.tsx` location.
+After saving, your theme should be visible in the nav.
 
 ## Testing Your Theme
 
