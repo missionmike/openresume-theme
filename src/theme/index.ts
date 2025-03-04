@@ -1,2 +1,2 @@
-export { ThemeDefault } from "./Default/ThemeDefault";
-export { ThemeDefaultPDF } from "./Default/ThemeDefaultPDF";
+export { ThemeDefault } from "./default/ThemeDefault";
+export { ThemeDefaultPDF } from "./default/ThemeDefaultPDF";

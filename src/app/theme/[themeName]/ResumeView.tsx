@@ -3,7 +3,7 @@
 import { ThemeAppearanceContext } from "@/app/components/ThemeContext";
 import { ThemeDefault } from "@/theme";
 import { ThemeName } from "@/types";
-import { themeDefaultSampleData } from "@/theme/Default/sampleData";
+import { themeDefaultSampleData } from "@/theme/sampleData";
 import { useContext } from "react";
 
 export const ResumeView = ({ themeName }: { themeName: ThemeName }) => {

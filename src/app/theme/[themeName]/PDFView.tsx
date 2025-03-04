@@ -2,10 +2,10 @@
 
 import { Box, Button } from "@mui/material";
 
-import { ThemeDefaultPDF } from "@/theme/Default/ThemeDefaultPDF";
+import { ThemeDefaultPDF } from "@/theme/default/ThemeDefaultPDF";
 import { ThemeName } from "@/types";
 import html2pdf from "html2pdf.js";
-import { themeDefaultSampleData } from "@/theme/Default/sampleData";
+import { themeDefaultSampleData } from "@/theme/sampleData";
 import { useRef } from "react";
 
 interface PDFViewProps {
