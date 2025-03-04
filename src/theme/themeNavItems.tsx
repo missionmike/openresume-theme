@@ -8,7 +8,7 @@ interface NavItem {
 
 export const themeNavItems: NavItem[] = [
   {
-    text: "Default Theme",
+    text: "Default",
     icon: <FeedIcon />,
     href: "/theme/default",
   },

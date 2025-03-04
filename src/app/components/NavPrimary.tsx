@@ -105,12 +105,6 @@ export const NavPrimary = () => {
               paddingTop: 2,
             }}
           >
-            <Divider
-              sx={{
-                marginTop: 2,
-                marginBottom: 2,
-              }}
-            />
             <NavItem text="Home" icon={<HomeIcon />} href="/" />
             <Divider
               sx={{
@@ -118,6 +112,9 @@ export const NavPrimary = () => {
                 marginBottom: 2,
               }}
             />
+            <Typography variant="body1" sx={{ paddingLeft: 2, fontWeight: "bold" }}>
+              Themes
+            </Typography>
             {themeNavItems.map((navItem) => (
               <NavItem key={navItem.text} {...navItem} />
             ))}
