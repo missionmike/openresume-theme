@@ -24,7 +24,7 @@ export const ProjectAccordion = ({ project }: { project: Project }) => {
 
   return (
     <Accordion
-      slotProps={{ heading: { component: "h5" } }}
+      slotProps={{ heading: { component: "span" } }}
       onChange={handleAccordionChange}
       expanded={expanded}
       sx={{
@@ -53,6 +53,7 @@ export const ProjectAccordion = ({ project }: { project: Project }) => {
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         sx={{
+          fontFamily: "geistSans, Arial, sans-serif",
           margin: "0 !important",
           "& .Mui-expanded": {
             margin: "0 !important",
@@ -67,7 +68,7 @@ export const ProjectAccordion = ({ project }: { project: Project }) => {
       <AccordionDetails
         sx={(theme) => ({
           backgroundColor: theme.palette.primary.light,
-          padding: "0.2rem 1rem",
+          padding: "1rem 2rem",
           mt: 0,
           "@media screen and (max-width: $breakpoint_mobile)": {
             padding: "1rem !important",

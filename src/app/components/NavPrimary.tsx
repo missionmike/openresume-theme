@@ -14,6 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { MuiLink } from "@/components/MuiLink";
 import { ThemeAppearanceToggle } from "./ThemeAppearanceToggle";
 import Typography from "@mui/material/Typography";
+import { themeNavItems } from "@/theme/themeNavItems";
 
 export const NavPrimary = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,12 +105,6 @@ export const NavPrimary = () => {
               paddingTop: 2,
             }}
           >
-            <Divider
-              sx={{
-                marginTop: 2,
-                marginBottom: 2,
-              }}
-            />
             <NavItem text="Home" icon={<HomeIcon />} href="/" />
             <Divider
               sx={{
@@ -117,7 +112,12 @@ export const NavPrimary = () => {
                 marginBottom: 2,
               }}
             />
-            <NavItem text="Default Theme" icon={<HomeIcon />} href="/theme/default" />
+            <Typography variant="body1" sx={{ paddingLeft: 2, fontWeight: "bold" }}>
+              Themes
+            </Typography>
+            {themeNavItems.map((navItem) => (
+              <NavItem key={navItem.text} {...navItem} />
+            ))}
           </List>
           <Box
             sx={{

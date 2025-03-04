@@ -42,8 +42,7 @@ export const WorkExperience = ({ companies }: { companies: Company[] }) => (
           >
             {company.name}
             <Typography
-              // component="span"
-              variant="h5"
+              component="div"
               sx={{
                 fontWeight: "normal",
                 fontSize: "1.2rem",
