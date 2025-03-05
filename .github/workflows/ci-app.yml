@@ -2,7 +2,7 @@ name: "CI: App"
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
     paths:
       - "**.ts"
       - "**.tsx"
