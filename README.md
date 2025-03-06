@@ -153,6 +153,10 @@ your own `sampleData.json` and `sampleData.ts` files within your `src/theme/[the
 Then, ensure they're imported in the `src/app/theme/[themeName]/ResumeView.tsx` and
 `src/app/theme/[themeName]/PDFView.tsx` files to be passed into your example page.
 
+If you want to base your sample data off a real resume from openresume.org, visit the
+[Postman collection](https://www.postman.com/universal-sunset-980198/missionmike/request/8ceygsv/getresume?ctx=documentation)
+and fire off the `getResume` request using the slug of your preferred user.
+
 ### Adding to the Nav Menu
 
 Add the theme to the nav menu by adding a new entry in the `src/theme/themeNavItems.tsx` location.
