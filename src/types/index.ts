@@ -149,7 +149,7 @@ export interface SkillForUser {
  */
 export interface SkillForProject {
   id: string;
-  description: string;
+  description: string | null;
 
   // The unique ID of the SkillForUser associated with this project.
   skillForUser: SkillForUser;
