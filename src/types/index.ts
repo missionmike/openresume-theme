@@ -180,6 +180,9 @@ export interface Company {
   // The positions associated with this company, which can contain one or more positions.
   // This can help show the user's progression within the company, or if they held multiple roles.
   positions?: Position[];
+
+  // The total number of positions associated with this company.
+  positionCount?: number;
 }
 
 /**
@@ -198,6 +201,9 @@ export interface Position {
 
   // The projects associated with this position, which can contain one or more projects.
   projects?: Project[];
+
+  // The total number of projects associated with this position.
+  projectCount?: number;
 }
 
 /**
