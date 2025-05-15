@@ -1,0 +1,217 @@
+{
+  "data": {
+    "resume": {
+      "user": {
+        "id": "user1",
+        "name": "David Schurer",
+        "displayEmail": "david.schurer@yahoo.com",
+        "location": "Bothell, WA",
+        "title": "Software Engineering Student",
+        "siteTitle": "David Schurer Resume",
+        "siteDescription": "Resume of David Schurer",
+        "siteImage": null
+      },
+      "socials": [
+        {
+          "id": "social1",
+          "userId": "user1",
+          "platform": "github",
+          "ref": "DavidSchurer"
+        },
+        {
+          "id": "social2",
+          "userId": "user1",
+          "platform": "linkedin",
+          "ref": "david-schurer"
+        }
+      ],
+      "skillsForUser": [
+        {
+          "id": "skilluser1",
+          "userId": "user1",
+          "skill": {
+            "id": "skill1",
+            "name": "HTML",
+            "icon": "logos:html-5"
+          },
+          "icon": null,
+          "description": "Proficient in semantic HTML",
+          "yearStarted": 2020,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser2",
+          "userId": "user1",
+          "skill": {
+            "id": "skill2",
+            "name": "CSS",
+            "icon": "logos:css-3"
+          },
+          "icon": null,
+          "description": "Experienced with modern CSS including Flexbox and Grid",
+          "yearStarted": 2020,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser3",
+          "userId": "user1",
+          "skill": {
+            "id": "skill3",
+            "name": "JavaScript",
+            "icon": "logos:javascript"
+          },
+          "icon": null,
+          "description": "ES6+ JavaScript for web development",
+          "yearStarted": 2020,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser4",
+          "userId": "user1",
+          "skill": {
+            "id": "skill4",
+            "name": "React",
+            "icon": "devicon:react"
+          },
+          "icon": null,
+          "description": "Component-based UI development",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser5",
+          "userId": "user1",
+          "skill": {
+            "id": "skill5",
+            "name": "Python",
+            "icon": "devicon:python"
+          },
+          "icon": null,
+          "description": "Scripting and data processing",
+          "yearStarted": 2019,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser6",
+          "userId": "user1",
+          "skill": {
+            "id": "skill6",
+            "name": "C++",
+            "icon": "skill-icons:cpp"
+          },
+          "icon": null,
+          "description": "Object-oriented programming",
+          "yearStarted": 2019,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser7",
+          "userId": "user1",
+          "skill": {
+            "id": "skill7",
+            "name": "SQL",
+            "icon": "logos:mysql-icon"
+          },
+          "icon": null,
+          "description": "Database querying and design",
+          "yearStarted": 2021,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser8",
+          "userId": "user1",
+          "skill": {
+            "id": "skill8",
+            "name": "Java",
+            "icon": "devicon:java"
+          },
+          "icon": null,
+          "description": "Backend development and algorithms",
+          "yearStarted": 2019,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser9",
+          "userId": "user1",
+          "skill": {
+            "id": "skill9",
+            "name": "Firebase",
+            "icon": "logos:firebase"
+          },
+          "icon": null,
+          "description": "Realtime databases and authentication",
+          "yearStarted": 2023,
+          "totalYears": null
+        },
+        {
+          "id": "skilluser10",
+          "userId": "user1",
+          "skill": {
+            "id": "skill10",
+            "name": "AWS",
+            "icon": "logos:aws"
+          },
+          "icon": null,
+          "description": "Cloud deployment and storage",
+          "yearStarted": 2024,
+          "totalYears": null
+        }
+      ],
+      "companies": [
+        {
+          "id": "company1",
+          "name": "Easy Event Planning",
+          "location": "Remote",
+          "startDate": "1693612800000",
+          "endDate": "1703980800000",
+          "positions": [
+            {
+              "id": "position1",
+              "title": "Data Management/Analyst Intern",
+              "startDate": "1693612800000",
+              "endDate": "1703980800000",
+              "projects": [
+                {
+                  "id": "project1",
+                  "name": "Proofed more than 2,000 marketplace categories, ensuring URLs and names were relevant with a 95% verification accuracy of the marketplace website.",
+                  "description": "",
+                  "sortIndex": 0,
+                  "skillsForProject": []
+                },
+                {
+                  "id": "project2",
+                  "name": "Analyzed keyword data for over 40 event themes, refining the classification system and updating more than 1,000 entries.",
+                  "description": "",
+                  "sortIndex": 1,
+                  "skillsForProject": []
+                },
+                {
+                  "id": "project3",
+                  "name": "Applied Excel functions to filter and streamline the process, enhancing search relevance and SEO performance.",
+                  "description": "",
+                  "sortIndex": 2,
+                  "skillsForProject": []
+                },
+                {
+                  "id": "project4",
+                  "name": "Utilized data analytics tools to revise and validate descriptions for events on the marketplace, completed more than 15 keyword optimization tasks, contributing to more effective event marketing strategies.",
+                  "description": "",
+                  "sortIndex": 3,
+                  "skillsForProject": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "education": [
+        {
+          "id": "edu1",
+          "school": "University of Washington Bothell",
+          "degree": "Bachelor of Science in Computer Science and Software Engineering",
+          "dateAwarded": "1725062400000"
+        }
+      ]
+    }
+  }
+} 

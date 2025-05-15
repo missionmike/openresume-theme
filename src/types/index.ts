@@ -18,7 +18,7 @@ export type ThemeAppearance = "dark" | "light";
  * dashes instead of spaces. This value is used to determine which theme gets rendered
  * on the OpenResume site, and should be unique to each theme.
  */
-export type ThemeName = "default"; // Add more themes here, e.g. "default" | "my-theme" | "another-theme"
+export type ThemeName = "default" | "davids-theme"; // Added new Davids theme
 
 /**
  * The ResumeData object is the main data object that contains all the user's information,
