@@ -243,3 +243,18 @@ export interface Education {
   // The date awarded in timestamp format. It is displayed as a month/year format.
   dateAwarded: string;
 }
+
+// Certification type for the Certifications section
+export interface Certification {
+  // Certification name
+  name: string;
+
+  // Issuing Organization
+  issuer: string;
+
+  // Date Earned or Expected
+  date?: string;
+
+  // (Optional) Credential URL or ID
+  credentialUrl?: string;
+}
