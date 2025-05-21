@@ -2,201 +2,117 @@
   "data": {
     "resume": {
       "user": {
-        "id": "user1",
-        "name": "David Schurer",
-        "displayEmail": "david.schurer@yahoo.com",
-        "location": "Bothell, WA",
-        "title": "Software Engineering Student",
-        "siteTitle": "David Schurer Resume",
-        "siteDescription": "Resume of David Schurer",
+        "id": "1",
+        "name": "Test User",
+        "displayEmail": "testuser@gmail.com",
+        "location": "San Francisco, CA",
+        "title": "Senior Staff Software Engineer",
+        "siteTitle": "Test User Resume",
+        "siteDescription": "Resume of Test User",
         "siteImage": null
       },
       "socials": [
-        {
-          "id": "social1",
-          "userId": "user1",
-          "platform": "github",
-          "ref": "DavidSchurer"
-        },
-        {
-          "id": "social2",
-          "userId": "user1",
-          "platform": "linkedin",
-          "ref": "david-schurer"
-        }
+        { "id": "1", "userId": "1", "platform": "linkedin.com", "ref": "testuser" },
+        { "id": "2", "userId": "1", "platform": "github.com", "ref": "testuser" },
+        { "id": "3", "userId": "1", "platform": "twitter.com", "ref": "testuser" }
       ],
       "skillsForUser": [
         {
-          "id": "skilluser1",
-          "userId": "user1",
-          "skill": {
-            "id": "skill1",
-            "name": "HTML",
-            "icon": "logos:html-5"
-          },
+          "id": "1",
+          "userId": "1",
+          "skill": { "id": "1", "name": "TypeScript", "icon": null },
           "icon": null,
-          "description": "Proficient in semantic HTML",
-          "yearStarted": 2020,
-          "totalYears": null
+          "description": "Expert in TypeScript for large-scale applications.",
+          "yearStarted": 2014,
+          "totalYears": 10
         },
         {
-          "id": "skilluser2",
-          "userId": "user1",
-          "skill": {
-            "id": "skill2",
-            "name": "CSS",
-            "icon": "logos:css-3"
-          },
+          "id": "2",
+          "userId": "1",
+          "skill": { "id": "2", "name": "React", "icon": null },
           "icon": null,
-          "description": "Experienced with modern CSS including Flexbox and Grid",
-          "yearStarted": 2020,
-          "totalYears": null
+          "description": "Built and led React projects at scale.",
+          "yearStarted": 2015,
+          "totalYears": 9
         },
         {
-          "id": "skilluser3",
-          "userId": "user1",
-          "skill": {
-            "id": "skill3",
-            "name": "JavaScript",
-            "icon": "logos:javascript"
-          },
+          "id": "3",
+          "userId": "1",
+          "skill": { "id": "3", "name": "Node.js", "icon": null },
           "icon": null,
-          "description": "ES6+ JavaScript for web development",
-          "yearStarted": 2020,
-          "totalYears": null
+          "description": "Architected Node.js microservices.",
+          "yearStarted": 2013,
+          "totalYears": 11
         },
         {
-          "id": "skilluser4",
-          "userId": "user1",
-          "skill": {
-            "id": "skill4",
-            "name": "React",
-            "icon": "devicon:react"
-          },
+          "id": "4",
+          "userId": "1",
+          "skill": { "id": "4", "name": "AWS", "icon": null },
           "icon": null,
-          "description": "Component-based UI development",
-          "yearStarted": 2021,
-          "totalYears": null
+          "description": "Designed cloud infrastructure on AWS.",
+          "yearStarted": 2016,
+          "totalYears": 8
         },
         {
-          "id": "skilluser5",
-          "userId": "user1",
-          "skill": {
-            "id": "skill5",
-            "name": "Python",
-            "icon": "devicon:python"
-          },
+          "id": "5",
+          "userId": "1",
+          "skill": { "id": "5", "name": "Kubernetes", "icon": null },
           "icon": null,
-          "description": "Scripting and data processing",
-          "yearStarted": 2019,
-          "totalYears": null
-        },
-        {
-          "id": "skilluser6",
-          "userId": "user1",
-          "skill": {
-            "id": "skill6",
-            "name": "C++",
-            "icon": "skill-icons:cpp"
-          },
-          "icon": null,
-          "description": "Object-oriented programming",
-          "yearStarted": 2019,
-          "totalYears": null
-        },
-        {
-          "id": "skilluser7",
-          "userId": "user1",
-          "skill": {
-            "id": "skill7",
-            "name": "SQL",
-            "icon": "logos:mysql-icon"
-          },
-          "icon": null,
-          "description": "Database querying and design",
-          "yearStarted": 2021,
-          "totalYears": null
-        },
-        {
-          "id": "skilluser8",
-          "userId": "user1",
-          "skill": {
-            "id": "skill8",
-            "name": "Java",
-            "icon": "devicon:java"
-          },
-          "icon": null,
-          "description": "Backend development and algorithms",
-          "yearStarted": 2019,
-          "totalYears": null
-        },
-        {
-          "id": "skilluser9",
-          "userId": "user1",
-          "skill": {
-            "id": "skill9",
-            "name": "Firebase",
-            "icon": "logos:firebase"
-          },
-          "icon": null,
-          "description": "Realtime databases and authentication",
-          "yearStarted": 2023,
-          "totalYears": null
-        },
-        {
-          "id": "skilluser10",
-          "userId": "user1",
-          "skill": {
-            "id": "skill10",
-            "name": "AWS",
-            "icon": "logos:aws"
-          },
-          "icon": null,
-          "description": "Cloud deployment and storage",
-          "yearStarted": 2024,
-          "totalYears": null
+          "description": "Deployed and managed Kubernetes clusters.",
+          "yearStarted": 2017,
+          "totalYears": 7
         }
       ],
       "companies": [
         {
-          "id": "company1",
-          "name": "Easy Event Planning",
-          "location": "Remote",
-          "startDate": "1693612800000",
-          "endDate": "1703980800000",
+          "id": "1",
+          "name": "Tech Innovators Inc.",
+          "location": "San Francisco, CA",
+          "startDate": "1451606400000",
+          "endDate": null,
           "positions": [
             {
-              "id": "position1",
-              "title": "Data Management/Analyst Intern",
-              "startDate": "1693612800000",
-              "endDate": "1703980800000",
+              "id": "1",
+              "title": "Senior Staff Software Engineer",
+              "startDate": "1451606400000",
+              "endDate": null,
               "projects": [
                 {
-                  "id": "project1",
-                  "name": "Proofed more than 2,000 marketplace categories, ensuring URLs and names were relevant with a 95% verification accuracy of the marketplace website.",
-                  "description": "",
+                  "id": "1",
+                  "name": "NextGen Platform Migration",
+                  "description": "Led migration of legacy systems to a scalable cloud-native platform using Kubernetes and AWS.",
                   "sortIndex": 0,
                   "skillsForProject": []
                 },
                 {
-                  "id": "project2",
-                  "name": "Analyzed keyword data for over 40 event themes, refining the classification system and updating more than 1,000 entries.",
-                  "description": "",
+                  "id": "2",
+                  "name": "Realtime Analytics Engine",
+                  "description": "Architected and implemented a real-time analytics engine processing millions of events per day.",
                   "sortIndex": 1,
                   "skillsForProject": []
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Cloud Solutions LLC",
+          "location": "Remote",
+          "startDate": "1388534400000",
+          "endDate": "1451520000000",
+          "positions": [
+            {
+              "id": "2",
+              "title": "Lead Software Engineer",
+              "startDate": "1388534400000",
+              "endDate": "1451520000000",
+              "projects": [
                 {
-                  "id": "project3",
-                  "name": "Applied Excel functions to filter and streamline the process, enhancing search relevance and SEO performance.",
-                  "description": "",
-                  "sortIndex": 2,
-                  "skillsForProject": []
-                },
-                {
-                  "id": "project4",
-                  "name": "Utilized data analytics tools to revise and validate descriptions for events on the marketplace, completed more than 15 keyword optimization tasks, contributing to more effective event marketing strategies.",
-                  "description": "",
-                  "sortIndex": 3,
+                  "id": "3",
+                  "name": "API Gateway Development",
+                  "description": "Designed and built a secure, high-throughput API gateway in Node.js.",
+                  "sortIndex": 0,
                   "skillsForProject": []
                 }
               ]
@@ -206,10 +122,48 @@
       ],
       "education": [
         {
-          "id": "edu1",
-          "school": "University of Washington Bothell",
-          "degree": "Bachelor of Science in Computer Science and Software Engineering",
-          "dateAwarded": "1725062400000"
+          "id": "1",
+          "school": "Stanford University",
+          "degree": "B.S. Computer Science",
+          "dateAwarded": "1370044800000"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Cloud Cost Optimizer",
+          "techStack": "TypeScript, AWS Lambda, DynamoDB",
+          "description": [
+            "Developed a tool to analyze and reduce cloud spend, saving 30% on infrastructure costs.",
+            "Integrated with AWS APIs for real-time monitoring."
+          ],
+          "metrics": "Saved $500K annually in cloud costs.",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/testuser/cloud-cost-optimizer" }
+          ]
+        },
+        {
+          "name": "DevOps Dashboard",
+          "techStack": "React, Node.js, Kubernetes",
+          "description": [
+            "Built a dashboard for monitoring CI/CD pipelines and deployments.",
+            "Enabled real-time alerts and visualizations for engineering teams."
+          ],
+          "metrics": "Adopted by 10+ teams across the org.",
+          "links": []
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect – Professional",
+          "issuer": "Amazon Web Services",
+          "date": "2022",
+          "credentialUrl": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+        },
+        {
+          "name": "Certified Kubernetes Administrator (CKA)",
+          "issuer": "Cloud Native Computing Foundation",
+          "date": "2021",
+          "credentialUrl": "https://www.cncf.io/certification/cka/"
         }
       ]
     }
