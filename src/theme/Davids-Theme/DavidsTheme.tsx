@@ -7,9 +7,11 @@ import {
     Tab,
     IconButton,
   } from "@mui/material";
+  import { TextField, InputAdornment, Menu, MenuItem } from "@mui/material";
+  import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
   import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
   import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-  import { useState } from "react";
+  import { useState, useMemo } from "react";
   
   import {
     Company,
@@ -79,12 +81,75 @@ import {
       certifications && certifications.length ? certifications : defaultCertifications;
 
     /* ----------  SECTION DATA ---------- */
+    // Add state for skill filter and filter type
+    const [skillFilter, setSkillFilter] = useState("");
+    const [filterType, setFilterType] = useState<"skill" | "years">("skill");
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+    const [active, setActive] = useState<number>(0);
+
+    const handleDropdownClick = (event: React.MouseEvent<HTMLElement>) => {
+      setAnchorEl(event.currentTarget);
+    };
+
+    const handleDropdownClose = (type?: "skill" | "years") => {
+      if (type) setFilterType(type);
+      setAnchorEl(null);
+    };
+
+    // Filter skills based on skillFilter input and filterType
+    const filteredSkillsForUser = useMemo(() => {
+      if (!skillFilter.trim()) return skillsForUser;
+      const filter = skillFilter.trim().toLowerCase();
+      return skillsForUser.filter((s) => {
+        if (filterType === "skill") {
+          return s.skill.name.toLowerCase().includes(filter);
+        } else {
+          let years = s.totalYears;
+          if (years == null && s.yearStarted != null) {
+            years = new Date().getFullYear() - s.yearStarted;
+          }
+          const filterNum = Number(filter);
+          return !isNaN(filterNum) && years != null && years >= filterNum;
+        }
+      });
+    }, [skillFilter, skillsForUser, filterType]);
+    
+
     const sections: { label: string; render: JSX.Element | null }[] = [
       {
         label: "Skills",
         render:
           skillsForUser?.length ? (
-            <Skills skillType="user" skillsForUser={skillsForUser} />
+            <Box>
+              <Box sx={{ mb: 2, display: "flex", alignItems: "center" }}>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  placeholder={filterType === "skill" ? "Enter Skill" : "Enter Years of Experience"}
+                  value={skillFilter}
+                  onChange={e => setSkillFilter(e.target.value)}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton onClick={handleDropdownClick} edge="end">
+                          <ArrowDropDownIcon />
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
+                  sx={{ background: "#fff" }}
+                />
+                <Menu
+                  anchorEl={anchorEl}
+                  open={Boolean(anchorEl)}
+                  onClose={() => handleDropdownClose()}
+                >
+                  <MenuItem onClick={() => handleDropdownClose("skill")}>Skill</MenuItem>
+                  <MenuItem onClick={() => handleDropdownClose("years")}>Years of Experience</MenuItem>
+                </Menu>
+              </Box>
+              <Skills skillType="user" skillsForUser={filteredSkillsForUser} />
+            </Box>
           ) : null,
       },
       {
@@ -105,8 +170,6 @@ import {
         render: certificationData.length ? renderCertifications() : null,
       },
     ];
-  
-    const [active, setActive] = useState<number>(0);
   
     const cycle = (delta: number) => {
       setActive((prev) => (prev + delta + sections.length) % sections.length);
