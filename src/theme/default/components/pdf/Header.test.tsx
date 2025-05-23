@@ -3,57 +3,55 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
 import { Header } from "./Header";
-import { User } from "@/types";
+import { themeDefaultSampleData } from "@/theme/sampleData";
 
 describe("Header", () => {
-  const mockUser: User = {
-    id: "test-id",
-    name: "John Doe",
-    title: "Software Engineer",
-    location: "San Francisco, CA",
-    displayEmail: "john@example.com",
-  };
+  const sampleUser = themeDefaultSampleData.data.resume.user;
 
   it("renders user name", () => {
-    render(<Header user={mockUser} />);
-    expect(screen.getByText("John Doe")).toBeInTheDocument();
+    render(<Header user={sampleUser} />);
+    expect(screen.getByText(sampleUser.name as string)).toBeInTheDocument();
   });
 
   it("renders user title", () => {
-    render(<Header user={mockUser} />);
-    expect(screen.getByText("Software Engineer")).toBeInTheDocument();
+    render(<Header user={sampleUser} />);
+    expect(screen.getByText(sampleUser.title as string)).toBeInTheDocument();
   });
 
   it("renders location and email with separator", () => {
-    render(<Header user={mockUser} />);
-    const contactInfo = screen.getByText("San Francisco, CA |");
+    render(<Header user={sampleUser} />);
+    const contactInfo = screen.getByText(`${sampleUser.location} |`);
     expect(contactInfo).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "john@example.com" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: sampleUser.displayEmail as string }),
+    ).toBeInTheDocument();
   });
 
   it("renders email as clickable link", () => {
-    render(<Header user={mockUser} />);
-    const emailLink = screen.getByRole("link", { name: "john@example.com" });
-    expect(emailLink).toHaveAttribute("href", "mailto:john@example.com");
+    render(<Header user={sampleUser} />);
+    const emailLink = screen.getByRole("link", { name: sampleUser.displayEmail as string });
+    expect(emailLink).toHaveAttribute("href", `mailto:${sampleUser.displayEmail}`);
   });
 
   it("handles missing location", () => {
-    const userWithoutLocation = { ...mockUser, location: null };
+    const userWithoutLocation = { ...sampleUser, location: null };
     render(<Header user={userWithoutLocation} />);
     expect(screen.queryByText(/\|/)).not.toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "john@example.com" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: sampleUser.displayEmail as string }),
+    ).toBeInTheDocument();
   });
 
   it("handles missing email", () => {
-    const userWithoutEmail = { ...mockUser, displayEmail: null };
+    const userWithoutEmail = { ...sampleUser, displayEmail: null };
     render(<Header user={userWithoutEmail} />);
-    expect(screen.getByText("San Francisco, CA |")).toBeInTheDocument();
+    expect(screen.getByText(`${sampleUser.location} |`)).toBeInTheDocument();
     expect(screen.queryByRole("link")).not.toBeInTheDocument();
   });
 
   it("handles missing location and email", () => {
     const userWithoutContactInfo = {
-      ...mockUser,
+      ...sampleUser,
       location: null,
       displayEmail: null,
     };
