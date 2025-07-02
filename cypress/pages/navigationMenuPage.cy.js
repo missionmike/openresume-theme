@@ -8,10 +8,6 @@ export class NavigationMenuPage {
     return cy.get("a[href='/theme/davids']");
   }
 
-  getClassicThemeItem() {
-    return cy.get("a[href='/theme/default']");
-  }
-
   getCloseView() {
     return cy.get("button[data-testid='nav-primary-menu-close-button']");
   }
