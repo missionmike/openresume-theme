@@ -1,5 +1,5 @@
 export class NavigationMenuPage {
-  getNavPrimaryMenu() {
+  visitNavPrimaryMenu() {
     cy.visit("/");
     return cy.get("button[data-testid='nav-primary-menu-button']");
   }

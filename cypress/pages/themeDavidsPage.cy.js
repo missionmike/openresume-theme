@@ -1,5 +1,5 @@
 export class ThemeDavidsPage {
-  getDavidsThemePage() {
+  visitDavidsThemePage() {
     cy.visit("/theme/davids");
   }
 
