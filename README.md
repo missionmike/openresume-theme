@@ -2,8 +2,10 @@
 
 [![codecov](https://codecov.io/gh/mission-minded-llc/ampdresume-theme/graph/badge.svg?token=HGZ6NME2HH)](https://codecov.io/gh/mission-minded-llc/ampdresume-theme)
 
-> [!important] The theme package is being archived on GitHub and deprecated in `npm`. Themes will be
-> built directly into the main Amp'd Resume platform moving forward.
+## Important
+
+> The theme package is being archived on GitHub and deprecated in `npm`. Themes will be built
+> directly into the main Amp'd Resume platform moving forward.
 
 Anyone can contribute their own frontend theme design and implementation for
 [Amp'd Resume](https://www.ampdresume.com).
