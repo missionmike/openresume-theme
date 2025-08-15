@@ -7,6 +7,8 @@
 > The theme package is being archived on GitHub and deprecated in `npm`. Themes will be built
 > directly into the main Amp'd Resume platform moving forward.
 
+---
+
 Anyone can contribute their own frontend theme design and implementation for
 [Amp'd Resume](https://www.ampdresume.com).
 
