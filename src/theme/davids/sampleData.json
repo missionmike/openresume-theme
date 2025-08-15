@@ -68,6 +68,7 @@
         {
           "id": "1",
           "name": "Tech Innovators Inc.",
+          "description": null,
           "location": "San Francisco, CA",
           "startDate": "1451606400000",
           "endDate": null,
@@ -99,6 +100,7 @@
         {
           "id": "2",
           "name": "Cloud Solutions LLC",
+          "description": null,
           "location": "Remote",
           "startDate": "1388534400000",
           "endDate": "1451520000000",

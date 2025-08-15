@@ -10,7 +10,23 @@ export const MuiLink = ({
   href: string;
   target?: "_self" | "_blank";
 }) => (
-  <Link href={href} component={NextLink} target={target}>
+  <Link
+    href={href}
+    component={NextLink}
+    target={target}
+    sx={{
+      color: "inherit",
+      textDecoration: "underline",
+      "&:hover": {
+        color: "inherit",
+        textDecoration: "underline",
+      },
+      "&:visited": {
+        color: "inherit",
+        textDecoration: "underline",
+      },
+    }}
+  >
     {children}
   </Link>
 );

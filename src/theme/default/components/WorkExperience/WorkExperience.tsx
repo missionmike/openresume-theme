@@ -6,6 +6,7 @@ import { Company } from "@/types";
 import { PositionsList } from "./PositionsList";
 import { ResumeTitle } from "@/theme/components/ResumeTitle/ResumeTitle";
 import { formatLongDate } from "@/lib/format";
+import parse from "html-react-parser";
 
 export const WorkExperience = ({ companies }: { companies: Company[] }) => (
   <Box component="section">
@@ -52,6 +53,19 @@ export const WorkExperience = ({ companies }: { companies: Company[] }) => (
               {company?.location ? `${company.location}, ` : ""}
               {startDate} to {endDate.length ? endDate : "Present"}
             </Typography>
+            {company?.description && (
+              <Typography
+                component="div"
+                sx={{
+                  fontSize: "1rem",
+                  maxWidth: "600px",
+                  margin: "1rem auto",
+                  fontStyle: "italic",
+                }}
+              >
+                {parse(company.description)}
+              </Typography>
+            )}
           </Typography>
           <PositionsList company={company} />
         </Box>

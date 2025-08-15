@@ -27,7 +27,7 @@ describe("WorkExperience", () => {
     expect(screen.getByText("Work Experience")).toBeInTheDocument();
 
     // Check if company names are rendered
-    expect(screen.getByText("Dataflow Systems")).toBeInTheDocument();
+    expect(screen.getAllByText("Dataflow Systems")).toHaveLength(2); // 1 heading + 1 position
     expect(screen.getByText("CloudScale Technologies")).toBeInTheDocument();
     expect(screen.getByText("TechStart Inc.")).toBeInTheDocument();
 

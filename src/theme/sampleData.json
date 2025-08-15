@@ -212,6 +212,7 @@
         {
           "id": "cm667uex40003q8n1tgsuik5m",
           "name": "Dataflow Systems",
+          "description": "<a href='https://www.google.com' target='_blank'>Dataflow Systems</a> is a software development company that specializes in building scalable and efficient software solutions for businesses.",
           "location": "San Francisco, CA",
           "startDate": "1705825877364",
           "endDate": null,
@@ -337,6 +338,7 @@
         {
           "id": "cm667uf3c0005q8n1o0qn46y8",
           "name": "CloudScale Technologies",
+          "description": null,
           "location": "Seattle, WA",
           "startDate": "1674289877364",
           "endDate": "1705825877364",
@@ -462,6 +464,7 @@
         {
           "id": "cm667uf7h0007q8n1hhzq0h57",
           "name": "TechStart Inc.",
+          "description": null,
           "location": "Austin, TX",
           "startDate": "1642753877364",
           "endDate": "1674289877364",

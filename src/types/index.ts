@@ -225,6 +225,9 @@ export interface Company {
   id: string;
   name: string;
 
+  // The description of the company, e.g. "A description of the company".
+  description: string | null;
+
   // The location of the company, e.g. "San Francisco, CA". This value is not strict,
   // so a location is never verified as being accurate.
   location: string;

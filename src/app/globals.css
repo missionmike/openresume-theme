@@ -1,0 +1,36 @@
+/* Global styles for anchor elements */
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Ensure links in Material-UI components also follow this styling */
+.MuiLink-root {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.MuiLink-root:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.MuiLink-root:visited {
+  color: inherit;
+  text-decoration: underline;
+}
